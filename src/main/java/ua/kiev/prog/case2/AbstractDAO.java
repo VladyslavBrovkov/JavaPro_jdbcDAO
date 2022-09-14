@@ -195,6 +195,8 @@ public abstract class AbstractDAO<T> {
 
                             field.set(t, rs.getObject(columnName));
                         }
+
+
                         res.add(t);
                     }
                 }

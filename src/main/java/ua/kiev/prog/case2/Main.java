@@ -40,10 +40,14 @@ public class Main {
             //List<Client> list1 = dao.getAllByFields(Client.class, Stream.of("name", "age"));
             List<Client> list2 = dao.getAllByFields(Client.class, "id","age");
 
+            List<Client> list3 = dao.getAllByFields(Client.class, "name","age");
+
            // System.out.println(list1);
             for (Client cli : list2)
                 System.out.println(cli);
 
+            for (Client cli : list3)
+                System.out.println(cli);
 
             dao.delete(list.get(0));
         }
